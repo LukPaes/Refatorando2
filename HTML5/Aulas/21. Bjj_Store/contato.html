@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Contato - JiuStore</title>
+<link rel="stylesheet" href="../21. Bjj_Store/css/styles.css">
+</head>
+<body>
+<header>
+<h1>Contato</h1>
+<nav>
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="produtos.html">Produtos</a></li>
+  <li><a href="tabela-medidas.html">Tabela</a></li>
+  <li><a href="contato.html">Contato</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<h2>Fale Conosco</h2>
+
+<form onsubmit="enviarFormulario(event)">
+  <label>Nome</label>
+  <input type="text" required>
+
+  <label>Email</label>
+  <input type="email" required><br><br>
+
+  <label>Mensagem</label><br>
+  <textarea required rows="5" cols="58"></textarea><br><br>
+
+  <button type="submit">Enviar</button><br>
+</form>
+<br>
+<button onclick="buscarLocalizacao()">Usar minha localização</button>
+<p id="localizacao"></p>
+
+</main>
+
+<footer>© 2025 Barezinho Store</footer>
+<script src="script.js"></script>
+</body>
+</html>

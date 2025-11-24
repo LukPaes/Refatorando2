@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Galeria de Imagens</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            max-width: 900px;
+            margin: 20px auto;
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        .galeria img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        figcaption {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .galeria {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .galeria {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Galeria de Imagens - Minhas trilhas Favoritas</h1>
+    </header>
+    <p>Confira algumas das minhas trilhas favoritas em SC através das imagens abaixo. <br><b>Clique em cada imagem para ver mais detalhes!</b></p>
+    <div class="galeria">
+      <figure>
+        <a href="Imagem 1.html" target="_blank">
+          <img src="../Imagens/image1_gravatar.jpg" alt="Gravatar">
+          <figcaption>Trilha do Gravatar</figcaption>
+        </a>
+      </figure>
+      <figure>
+        <a href="Imagem 2.html" target="_blank">
+          <img src="../imagens/image2_lagoinha do leste.jpg" alt="Lagoinha do Leste">
+          <figcaption>Trilha da Lagoinha do Leste</figcaption>
+        </a>          
+      </figure>
+      <figure>
+        <a href="Imagem 3.html" target="_blank">
+          <img src="../imagens/Image3_Trilha do Macaco.jpg" alt="Trilha do Macaco">
+          <figcaption>Trilha do Macaco</figcaption>
+        </a>
+      </figure>
+      <figure>      
+        <a href="Imagem 3.html" target="_blank">
+          <img src="../imagens/image4_Ilheus.jpg" alt="Trilha de Ilheus">
+          <figcaption>Trilha de Ilheus</figcaption>
+        </a>
+      </figure>
+    </div>
+
+  </body>

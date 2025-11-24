@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formulário de Inscrição - Conferência</title>
+  <style>
+    body {
+      font-family: system-ui, Arial, sans-serif;
+      background: #f8f9fa;
+      padding: 20px;
+    }
+    form {
+      background: #fff;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: 600;
+    }
+    input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-top: 5px;
+      font-size: 1rem;
+    }
+    fieldset {
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 10px;
+      margin-top: 15px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    .checkbox-group label {
+      font-weight: normal;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Inscrição na Conferência</h1>
+
+  <form id="inscricaoForm">
+    <label for="nome">Nome completo:</label>
+    <input type="text" id="nome" name="nome" required />
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="empresa">Empresa:</label>
+    <input type="text" id="empresa" name="empresa" />
+
+    <label for="cargo">Cargo:</label>
+    <input type="text" id="cargo" name="cargo" />
+
+    <fieldset>
+      <legend>Workshops disponíveis</legend>
+      <div class="checkbox-group">
+        <div><input type="checkbox" id="ws1" name="workshop" value="Inovação em TI" /> <label for="ws1">Inovação em TI</label></div>
+        <div><input type="checkbox" id="ws2" name="workshop" value="Transformação Digital" /> <label for="ws2">Transformação Digital</label></div>
+        <div><input type="checkbox" id="ws3" name="workshop" value="Liderança e Gerenciamento de Projetos" /> <label for="ws3">Liderança e Gerenciamento de Projetos/label></div>
+        <div><input type="checkbox" id="ws4" name="workshop" value="Sustentabilidade Corporativa" /> <label for="ws4">Sustentabilidade Corporativa</label></div>
+      </div>
+    </fieldset>
+
+    <label for="comentarios">Comentários ou solicitações especiais:</label>
+    <textarea id="comentarios" name="comentarios" rows="4" placeholder="Digite aqui..."></textarea>
+
+    <button type="submit">Enviar inscrição</button>
+  </form>
+
+  <script>
+    document.getElementById('inscricaoForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const nome = document.getElementById('nome').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const empresa = document.getElementById('empresa').value.trim();
+      const cargo = document.getElementById('cargo').value.trim();
+      const comentarios = document.getElementById('comentarios').value.trim();
+
+      const workshops = Array.from(document.querySelectorAll('input[name="workshop"]:checked'))
+                            .map(c => c.value);
+
+      if (!nome || !email) {
+        alert('Por favor, preencha os campos obrigatórios: nome e e-mail.');
+        return;
+      }
+
+      const dados = {
+        nome, email, empresa, cargo,
+        workshops,
+        comentarios
+      };
+
+      // Exibe no console (ou pode enviar via fetch POST para um servidor)
+      console.log('Inscrição enviada:', dados);
+      alert('Inscrição enviada com sucesso! Obrigado por participar.');
+
+      // Limpa o formulário
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>

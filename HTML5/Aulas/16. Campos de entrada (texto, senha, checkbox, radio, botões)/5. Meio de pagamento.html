@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>formulário de inscrição</title>
+      <style>
+          body { font-family: system-ui, Arial, sans-serif; padding: 20px; }
+          fieldset { border: 1px solid #ccc; padding: 12px; max-width: 360px; }
+          .actions { margin-top: 12px; }
+     </style>
+  </head>
+  <body>
+    <form action="/url-de-inscrição" method="post">
+    
+    <label for="username">Nome:</label><br>
+    <input type="text" id="name" name="name"><br>
+        
+    <label for="endereco">Endereço de Entrega:</label><br>
+    <textarea type="endereco" id="endereco" name="endereco"></textarea><br>
+
+    <label for="refeicao">Escolha sua Refeição:</label><br>
+    <fieldset id="meiodepagamento" name="pagamento">
+        <input type="radio" id="cartao" name="pagamento" value="cartao">
+        <label for="cartao">Cartão de Crédito</label><br>
+        <input type="radio" id="boleto" name="pagamento" value="boleto">
+        <label for="boleto">Boleto Bancário</label><br>
+        <input type="radio" id="paypal" name="pagamento" value="paypal">
+        <label for="paypal">Pay Pal</label><br>
+        <input type="radio" id="pix" name="pagamento" value="pix">
+        <label for="pix">Pix</label><br>
+    </fieldset><br>
+  
+    <input type="submit" value="Enviar">
+</form>
+  </body>
