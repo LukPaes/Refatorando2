@@ -1,14 +1,19 @@
-/* Mudar a cor do fundo da página */
-.destaque {
-        color: red;
-    }
-
-    /* Mudar a cor do texto de todos os parágrafos */
-#fundo-especial {
-    background-color: yellow;
+/* Seletor universal */
+* {
+    color: #008000;
+    font-family: Verdana;
 }
-
-/* Alterar o tamanho da fonte do título */
-h2 {
-    font-family: "arial";
+/* Seletor de elemento */
+p {
+    color: #0000FF;
+    font-family: Arial;
+}
+/* Seletor de ID */
+#titulo {
+    font-size: 24px;
+    color: #FF0000;
+} 
+/* Seletor de classe */
+.minha-classe {
+    font-weight: bold;
 }
