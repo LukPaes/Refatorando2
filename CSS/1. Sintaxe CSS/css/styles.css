@@ -1,7 +1,15 @@
-
+/* Mudar a cor do fundo da página */
 body { 
         margin:0; 
         font-family: Arial; 
         background:#fafafa; 
-        background-color: ;
+        background-color:lightgray;
     }
+/* Alterar o tamanho da fonte do título */
+h1 {
+    font-size: 24px;
+}
+/* Mudar a cor do texto de todos os parágrafos */
+p {
+    color: blue;
+}
