@@ -1,0 +1,12 @@
+
+div {
+    background-color: #0000FF; /* Azul */
+}   
+/* Mudar a cor do fundo da página */
+div.div-lista ul {
+    background-color: #0000FF; /* Azul */
+}   
+div.div-lista ul li {
+    color: #FFFF00; /* Amarelo */
+}
+    
