@@ -1,0 +1,14 @@
+/* Mudar a cor do fundo da página */
+.destaque {
+        color: red;
+    }
+
+    /* Mudar a cor do texto de todos os parágrafos */
+#fundo-especial {
+    background-color: yellow;
+}
+
+/* Alterar o tamanho da fonte do título */
+h2 {
+    font-family: "arial";
+}
