@@ -1,0 +1,16 @@
+/* Mudar a cor do fundo da página */
+* {
+    margin-left: 20px;    
+}
+
+li {
+    color: #808080;
+    border: 1px solid #000000;
+}
+#titulo {
+    font-size: 24px;
+    color: #FF0000;
+} 
+.minha-classe {
+    background-color: #FFFF00;
+}

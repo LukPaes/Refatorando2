@@ -1,0 +1,19 @@
+/* Seletor universal */
+* {
+    color: #008000;
+    font-family: Verdana;
+}
+/* Seletor de elemento */
+p {
+    color: #0000FF;
+    font-family: Arial;
+}
+/* Seletor de ID */
+#titulo {
+    font-size: 24px;
+    color: #FF0000;
+} 
+/* Seletor de classe */
+.minha-classe {
+    font-weight: bold;
+}
