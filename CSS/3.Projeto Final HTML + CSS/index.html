@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Final - Meu Site</title>
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="../3.Projeto Final HTML + CSS/css/estilos.css">
+
+    <!-- Fonte Google (opcional) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Cabeçalho resumdo -->
+    <header class="container section">
+        <h1>Projeto Final LukPaes!</h1>
+        <p>Com muito Orgulho fiz esse projeto para tentar aplicar tudo que aprendi aqui na refatorando sobre HTML5 e CSS3.</p>
+
+        <a href="#sobre" class="btn btn-primario">Saiba mais</a>
+    </header>
+
+    <!-- Seção falando o que vai ser desenvolvido -->
+    <section id="sobre" class="container section">
+        <h2>Sobre o Projeto</h2>
+
+        <div class="card">
+            <p>
+                Aqui estou tentando mostrar minhas habilidades em <strong>HTML</strong> e <strong>CSS</strong>, incluindo:
+            </p>
+
+            <ul class="custom-list">
+                <li><strong>Uso de seletores de tag, classe e ID</strong></li>
+                <li><strong>Aplicação de unidades como px, rem, % e vh</strong></li>
+                <li><strong>Estilização de tabelas, botões e formulários</strong></li>
+                <li><strong>Organização do CSS com boas práticas</strong></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Aqui dividi essa Seção para descrever as atividades executadas -->
+    <section class="container section">
+        <h2>Atividades Em Execução ou Andamento:</h2>
+            <p>
+                Abaixo estão as principais atividades que estou desenvolvendo neste projeto, buscando seguir o que foi pedido pelos requisitos do projeto:
+            </p>
+        <div class="card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Descrição</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Estrutura HTML</td>
+                        <td>A construção buscando a semântica e a organização.</td>
+                        <td class="celula-verde">Concluído</td>
+                    </tr>
+                    <tr>
+                        <td>Estilos CSS</td>
+                        <td> seletores, as unidades e as paletas de cores.</td>
+                        <td class="celula-azul">Em andamento</td>
+                    </tr>
+                    <tr>
+                        <td>Responsividade</td>
+                        <td>Aprimorando o layout para telas menores.</td>
+                        <td class="celula-vermelha">Pendente</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Seção Formulário -->
+    <section class="container section">
+        <h2>Entre em Contato Conosco:</h2>
+
+        <div class="card">
+            <form>
+                <label for="nome">Seu Nome:</label>
+                <input type="text" id="nome" placeholder="Digite seu nome">
+
+                <label for="email">Seu E-mail:</label>
+                <input type="email" id="email" placeholder="Digite seu email">
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" rows="5" placeholder="Escreva sua mensagem aqui"></textarea>
+
+                <button type="submit" class="btn btn-primario">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="container section">
+        <p>&copy; 2025 - Projeto Final CSS | Desenvolvido com 💙</p>
+    </footer>
+
+</body>
+
+</html>

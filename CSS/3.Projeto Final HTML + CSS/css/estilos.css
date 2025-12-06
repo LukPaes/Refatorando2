@@ -1,0 +1,190 @@
+/* ===========================
+   RESET BÁSICO
+=========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===========================
+   VARIÁVEIS (CSS moderno)
+=========================== */
+:root {
+  --cor-primaria: #678bce;
+  --cor-secundaria: #818CF8;
+  --cor-destaque: #F97316;
+  --texto: #1F2937;
+  --texto-fraco: #4B5563;
+  --fundo-claro: #F9FAFB;
+  --fundo-escuro: #111827;
+  --fonte-principal: "Inter", Arial, sans-serif;
+}
+
+/* ===========================
+   ESTILOS GERAIS
+=========================== */
+
+body {
+  font-family: var(--fonte-principal);
+  background-color: var(--fundo-claro);
+  color: var(--texto);
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--cor-primaria);
+}
+
+p {
+  margin-bottom: 15px;
+  color: var(--texto);
+}
+
+a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===========================
+   LAYOUT
+=========================== */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  margin: 40px 0;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+/* ===========================
+   BOTÕES
+=========================== */
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-primario {
+  background: var(--cor-primaria);
+  color: white;
+}
+
+.btn-primario:hover {
+  background: var(--cor-secundaria);
+}
+
+.btn-destaque {
+  background: var(--cor-destaque);
+  color: white;
+}
+
+/* ===========================
+   LISTAS E TABELAS
+=========================== */
+
+ul.custom-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.custom-list li {
+  padding: 8px;
+  background: white;
+  margin: 6px 0;
+  border-left: 4px solid var(--cor-primaria);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table th {
+  background: var(--cor-primaria);
+  color: white;
+  padding: 10px;
+}
+
+table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* ===========================
+   FORMULÁRIOS
+=========================== */
+
+input, textarea, select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 15px;
+  display: block;
+}
+
+button {
+  margin-top: 15px;
+}
+
+/* ===========================
+   RESPONSIVIDADE
+=========================== */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .card {
+    padding: 15px;
+  }
+}
+
+.celula-verde {
+  background-color: #4ADE80; /* verde */
+  text-align: center;
+}
+
+.celula-vermelha {
+  background-color: #F87171; /* vermelho */
+  text-align: center;
+}
+
+.celula-azul {
+  background-color: #60A5FA; /* azul */
+  text-align: center;
+  color: white;
+}

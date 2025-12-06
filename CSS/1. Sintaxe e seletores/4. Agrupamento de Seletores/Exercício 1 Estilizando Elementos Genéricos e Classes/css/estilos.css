@@ -1,0 +1,8 @@
+/* Seletor universal */
+div {
+    background-color: #FFFF00; /* Amarelo */
+}
+/* Seletor de elemento */
+p {
+    color: #FF0000; /* Vermelho */
+ }
