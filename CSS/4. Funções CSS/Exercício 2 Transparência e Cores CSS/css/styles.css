@@ -1,33 +1,19 @@
-/* Comentário de seção separando as regras para o corpo (body) */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
+/* Estilo do elemento pai */
+.parent {
+    width: 300px;
+    height: 200px;
+    background-color: rgba(0, 128, 0, 0.5); /* Verde com 50% de opacidade */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-/* Estilos para o cabeçalho (h1) */
-h1 {
-    font-size: 24px;
-    color: #333;
-    text-align: center;
-}
- 
-/* Estilos para os parágrafos (p) */
-p {
-    font-size: 16px;
-    color: #666;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
- 
-/* Comentário de seção separando as regras para links (a) */
-a {
-    text-decoration: none;
-    color: #0077b6;
-}
- 
-/* Estilos para links quando estão em estado de foco (hover) */
-a:hover {
-    text-decoration: underline;
-    color: #005f8b;
+
+/* Estilo do elemento filho */
+.child {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 0, 255); /* Azul sólido */
+    
+    transform: rotate(45deg); /* Rotação de 45 graus */
 }
