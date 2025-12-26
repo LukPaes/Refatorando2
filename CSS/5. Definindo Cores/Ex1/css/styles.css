@@ -1,0 +1,21 @@
+div {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+
+/* Vermelho */
+#red-box {
+    background-color: #FF0000;
+}
+
+/* Verde */
+#green-box {
+    background-color: #00FF00;
+}
+
+/* Azul */
+#blue-box {
+    background-color: #0000FF;
+    color: #FFFFFF;
+}
