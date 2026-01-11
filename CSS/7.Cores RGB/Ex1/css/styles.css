@@ -1,0 +1,20 @@
+.color-box {
+    width: 200px;
+    height: 100px;
+    margin: 10px 0;
+}
+
+/* Vermelho */
+#red-box {
+    background-color: rgb(209, 109, 109);
+}
+
+/* Verde */
+#green-box {
+    background-color: rgb(54, 94, 54);
+}
+
+/* Azul */
+#blue-box {
+    background-color: rgb(148, 183, 236);
+}
