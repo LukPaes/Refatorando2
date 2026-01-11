@@ -1,0 +1,24 @@
+table {
+    width: 100%;
+    height: 150px;
+    margin: 10px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+/* Vermelho */
+#red-cell {
+    background-color: #b43e3e;
+}
+
+/* Verde */
+#green-cell {
+    background-color: #173517;
+    color: #FFFFFF;
+}
+
+/* Azul */
+#blue-cell {
+    background-color: #0000FF;
+    color: #FFFFFF;
+}

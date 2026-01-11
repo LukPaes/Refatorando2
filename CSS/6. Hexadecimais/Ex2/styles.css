@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 250px;
+    margin-right: 10px;
+}
+
+/* Estilo inicial do botão */
+button {
+    padding: 10px 20px;
+    background-color: #007BFF; /* Azul padrão */
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Pseudo-classe hover */
+button:hover {
+    background-color: #b30018; /* Azul mais escuro ao passar o mouse */
+}
